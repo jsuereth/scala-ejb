@@ -6,4 +6,5 @@ package scalax.ejb.transactions
 trait UndoableAction {
   def commit() : Unit
   def rollback() : Unit
+  def retry() : Nothing
 }
